@@ -1,0 +1,52 @@
+name: comzeseepn
+main: com.comze_instancelabs.seepn.Main
+version: 1.0.7
+author: instancelabs
+permissions:
+  comze.*:
+    description: Gives access to all seepn commands.
+    children:
+      comze.dontspyme: true
+      comze.spynotification: true
+  comze.dontspyme:
+    description: You won't get spyed any more!
+  comze.spynotification:
+    description: You'll see who spies who.
+  comze.list:
+    description: List, who is spying who.
+commands:
+   seepn:
+      description: Lets you see all private messages sent from a player. To deactive, type in /seepn.
+      usage: /seepn [player]
+      permission: comze.seepn
+      permission-message: You don't have <permission>
+   spy:
+      description: Lets you see all private messages sent from a player. To deactive, type in /seepn.
+      usage: /spy [player]
+      permission: comze.seepn
+      permission-message: You don't have <permission>
+   seepnall:
+      description: Lets you see all private messages sent from all players.
+      usage: /seepnall
+      permission: comze.seepnall
+      permission-message: You don't have <permission>
+   spyall:
+      description: Lets you see all private messages sent from all players.
+      usage: /spyall
+      permission: comze.seepnall
+      permission-message: You don't have <permission>
+   seeip:
+      description: Shows the IP of the provided player.
+      usage: /seeip [player]
+      permission: comze.seeip
+      permission-message: You don't have <permission>
+   getip:
+      description: Shows the IP of the provided player.
+      usage: /getip [player]
+      permission: comze.seeip
+      permission-message: You don't have <permission>
+   seeinv:
+      description: Shows the inventory of the provided player.
+      usage: /seeinv [player]
+      permission: comze.seeinv
+      permission-message: You don't have <permission>
